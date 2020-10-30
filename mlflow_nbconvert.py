@@ -5,7 +5,7 @@ import mlflow
 from nbconvert.postprocessors import PostProcessorBase
 
 
-class MLFLowPostProcessor(PostProcessorBase):
+class MLFlowPostProcessor(PostProcessorBase):
     def postprocess(self, input):
         mlflow.log_artifact(input)
 
